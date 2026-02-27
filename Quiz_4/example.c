@@ -3,7 +3,7 @@
 int v[] = {3, 10, 8, 2, 7, 1, 5, 9, 6, 4};
 
 // swap(int i, int j) : swaps elements of v[] at positions i and j
-void swap(int i, int j){
+void swap(int i, int j) {
 	int temp = v[i];
 	v[i] = v[j];
 	v[j] = temp;
