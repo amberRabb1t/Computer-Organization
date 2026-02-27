@@ -14,17 +14,17 @@ struct pair C[5] = {1000,-1000,2000,-2000,3000,-3000,4000,-4000};
 char D[] = "The quick brown fox jumped over the laze dog.";
 
 int main() {
-  int* p = &A[1];
-  *(p + 4) = 66;
-  *(p + 22) = -88;
-  *(p + 33) = 2021;
-  *(p + 56) = 2038063468;
-  for (int i = 0; i < 4; ++i) {
-      printf("M[%lx] = %d\n", (uintptr_t) p, *p);
-      p = p + 14;
-  }
-  printABCD();
-  return 0;
+	int* p = &A[1];
+	*(p + 4) = 66;
+	*(p + 22) = -88;
+	*(p + 33) = 2021;
+	*(p + 56) = 2038063468;
+	for (int i = 0; i < 4; ++i) {
+		printf("M[%lx] = %d\n", (uintptr_t) p, *p);
+		p = p + 14;
+	}
+	printABCD();
+	return 0;
 }
 
 void printABCD(void) {
